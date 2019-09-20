@@ -93,17 +93,17 @@ indexbtn:
   enable: true
   name: Github
   icon: fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/kubenext/blog
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github: 
-  email: 
+  github: https://github.com/kubenext
+  email: li.shangjin@icloud.com
   facebook: 
-  twitter: 
-  qq: 
+  twitter: @kim22408740
+  qq: 1503714561
   weibo: 
   zhihu: 
   rss: true
