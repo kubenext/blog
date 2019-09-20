@@ -95,4 +95,7 @@ operator-sdk add controller --api-version=lear.example.com/v1alpha1 --kind=LearS
 
 整个项目基础框架已经搭建完成了，我们有一个CRD API，并且也有了控制器。接下来，我们就开始定义并编码我们的控制器逻辑了。
 
+### 定义Spec 结构体
+
+目标文件`pkg/apis/lear/v1alpha1/learservice_types.go`中，定义我们所需的结构， 
 
