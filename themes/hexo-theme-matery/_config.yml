@@ -235,7 +235,7 @@ postCalendar: true
 gitalk:
   enable: true
   owner: kubenext
-  repo: https://github.com/kubenext/blog.git
+  repo: blog
   oauth:
     clientId: 623f0a1d809ac531689f
     clientSecret: 2c5594fd4d836dd976d3643f937e161367bca20e
