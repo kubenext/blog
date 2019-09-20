@@ -102,7 +102,7 @@ socialLink:
   github: https://github.com/kubenext
   email: li.shangjin@icloud.com
   facebook: 
-  twitter: kim22408740
+  twitter: https://twitter.com/lishangjin2
   qq: 1503714561
   weibo: 
   zhihu: 
@@ -173,7 +173,7 @@ profile:
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
     hexo-theme-matery:
       icon: fa-meetup
@@ -220,7 +220,7 @@ mySkills:
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myGallery:
-  enable: true
+  enable: false
   data:
     - /medias/featureimages/0.jpg
     - /medias/featureimages/1.jpg
@@ -282,7 +282,7 @@ valine:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/kubenext/blog
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
@@ -292,8 +292,8 @@ githubLink:
 # 阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.
 # 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
 verifyPassword:
-  enable: false
-  promptMessage: 请输入访问本文章的密码
+  enable: true
+  promptMessage: c968858a89bf9555fc7a567c6f8d736686347657636847fcf212b51658386d39
   errorMessage: 密码错误，将返回主页！
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
@@ -399,7 +399,7 @@ reprint:
   
 # DaoVoice online contact 
 daovoice: 
-  enable: true
+  enable: false
   app_id:
   
 # Tidio online contact 
@@ -437,7 +437,7 @@ sharejs:
 # addthis文章分享模块.
 addthis:
   enable: false
-  pubid:  #前往https://www.addthis.com/获取
+  pubid: ra-5d84b1c14835b854 #前往https://www.addthis.com/获取
   
 # 打字效果副标题.
 subtitle: 
