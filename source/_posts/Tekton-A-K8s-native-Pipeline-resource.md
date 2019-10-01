@@ -137,3 +137,44 @@ spec:
 
 ### 授权信息
 
+git仓库、镜像仓库这些都是需要授权才能使用的。所有还需要一种授权信息的机制。Tekton本身是Kubernetes原生的编排系统。所有可以直接使用Kubernetes的ServiceAccount机制实现授权。
+
+- 定义一个保存镜像仓库授权信息的Secret
+
+```yaml
+apiVersion: v1
+kind: Secret
+metdata:
+  name: ack-cr-push-secret
+  annotations:
+    tekon.dev/docker-0: https://registry.ex.com
+type: kubernetes.io/basic-auth
+stringData:
+  username: <cleartext non-encoded>
+  password: <cleartext non-encoded>
+```
+
+- 定义ServiceAccount，并使用上面的secret
+
+```yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: pipeline-account
+secrets:
+- name: ack-cr-push-secret
+```
+
+- PipelineRun 中引用ServiceAccount
+  
+```yaml
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineRun
+medata:
+  generateName: tekton-kn-sample
+spec:
+  pipelineRef:
+    name: build-and-deploy-pipline
+    ...
+  serviceAccount: pipeline-account
+```
